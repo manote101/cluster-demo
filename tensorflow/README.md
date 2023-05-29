@@ -7,5 +7,7 @@ srun --container-image=/dataset/squashfs/nvidia+tensorflow+22.12-tf2-py3.sqsh \
 ```
 
 ```Shell
-
+srun --container-image=/dataset/squashfs/nvidia+tensorflow+22.12-tf2-py3.sqsh \
+--container-name=tensorflow --container-workdir=$(pwd) \
+--gpus=1 python train.py
 ```
