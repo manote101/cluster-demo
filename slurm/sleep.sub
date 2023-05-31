@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=0
+#SBATCH --gres=gpu:1			# request 1 GPU, you can also use --gpus=1
+#SBATCH --job-name "myprog01"
+#SBATCH --output=log-%x.%N.%J.out
+#SBATCH --error=log-%x.%N.%J.err
+
+# load module
+module load python3
+python --version
+
+# And finally run the jobs
+srun python sleep.py
+srun sleep 120
+
+echo "Just finished."
+

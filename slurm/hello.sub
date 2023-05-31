@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=0
+#SBATCH --job-name "hello"
+#SBATCH --output=log-%x.%N.%J.out
+#SBATCH --error=log-%x.%N.%J.err
+
+# show Python version from current shell
+echo "Python version from my shell is "
+python --version
+echo ""
+
+# load module
+module load python3
+echo "Python version after load module "
+python --version
+echo ""
+
+# And finally run the jobs
+srun python hello.py
+
