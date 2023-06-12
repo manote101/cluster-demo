@@ -12,6 +12,7 @@ srun --container-image=/raid/squashfs/nvidia+pytorch+22.10-py3.sqsh --container-
 ```
 ```Shell
 srun enroot list
+srun --gpus=4 enroot start pyxis_pytorch nvidia-smi
 ```
 
 ## Method#2: run with sbatch
