@@ -1,5 +1,7 @@
 # How to run Tensorflow with SLURM/Pyxis
 
+`cd ~/cluster-demo/enroot/tensorflow`
+
 ## List Tensorflow version
 ```Shell
 srun --container-image=/raid/squashfs/nvidia+tensorflow+22.12-tf2-py3.sqsh \
