@@ -41,4 +41,7 @@ curl -X 'POST' \
 ### SwaggerUI
 ![SwaggerUI](screenshot/screenshot.png)
 
+### Response
+![Response](screenshot/screenshot2.png)
+
 ### credit GitHub repo: https://github.com/aniketmaurya/tensorflow-fastapi-starter-pack
