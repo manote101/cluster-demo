@@ -15,9 +15,12 @@
 ## App Deployment
 
 ### Build Docker image
-`cd cluster-demo/deployments/flask`
-`docker build -t flask_app . `
-`docker images`
+
+```Shell
+cd cluster-demo/deployments/flask
+docker build -t flask_app . 
+docker images
+```
 
 
 ### Start Docker container
