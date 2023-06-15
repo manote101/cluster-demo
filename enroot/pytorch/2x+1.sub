@@ -13,5 +13,5 @@
 # And finally run the jobs
 srun --container-image=/raid/squashfs/nvidia+pytorch+22.10-py3.sqsh \
      --container-name=pytorch \
-     --container-workdir=$HOME/cluster-demo/pytorch \
+     --container-workdir=$(pwd) \
      python 2x+1.py 
