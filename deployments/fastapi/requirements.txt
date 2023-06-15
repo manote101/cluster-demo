@@ -1,0 +1,7 @@
+tensorflow-cpu
+fastapi
+Pillow
+starlette
+uvicorn
+numpy
+python-multipart
