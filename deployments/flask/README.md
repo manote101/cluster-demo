@@ -1,7 +1,5 @@
 ## Traing MNIST model in Tensorflow
 
-`
-`
 `cd cluster-demo/deployments/flask/test`
 
 `srun --container-image=/raid/squashfs/nvidia+tensorflow+22.12-tf2-py3.sqsh --container-name=tensorflow --container-workdir=$(pwd) --gpus=1 python train.py`
