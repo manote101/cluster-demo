@@ -1,8 +1,10 @@
 ## How to run
 
 ```Shell
-srun enroot list  	# this can run from both headnode and DGX node
-enroot list 		# You can run from DGX node only
+enroot list 		# this command run on your local node. Hence, there might be some errors/warnings if your are on Headnode.
+
+
+srun enroot list  	# this command will be submitted by Slurm, so it will run on Compute node(s)
 ```
 
 ## Method#1: run with srun
